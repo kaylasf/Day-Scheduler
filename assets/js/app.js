@@ -14,22 +14,21 @@ var time = $('.time')
 
 
 for( var i = 0 ; i <= time.length -1; i++){
-console.log(time[i].innerHTML)
+// console.log(time[i].innerHTML)
 
     if(time[i].innerHTML === hour){
-        console.log('yellow!')
         var current = time[i].innerHTML
         $(`.${current}`).addClass('present')
     }
 
-    //  if(time[i].innerHTML < hour){
-    //     console.log(time[i])
+    //  if(time[i].innerHTML < hour ){
+        
     //     $(`.${time[i].innerHTML}`).addClass('past')
     // }
 
     // if(time[i].innerHTML > hour) {
     //     console.log("hi")
-    //     $(`.${time[i].innerHTML}`).addClass('past')
+    //     $(`.${time[i].innerHTML}`).addClass('future')
     // }
 
 }
